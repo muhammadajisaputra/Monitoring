@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
 	public function Index(){
-		return view('admin.adminlte');
+		return view('admin.utama');
 	}
 
 	public function Table(){

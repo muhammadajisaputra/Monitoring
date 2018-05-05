@@ -12,6 +12,6 @@
 */
 
 Route::get('/', 'UserController@Index');
-Route::get('/tables', 'UserController@Table');
+Route::get('/tables', 'JadwalController@index');
 
 

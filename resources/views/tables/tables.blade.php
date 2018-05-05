@@ -32,17 +32,19 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                  <td>Trident</td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                </tr>
-                <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.0
-                  <td>Win 95+</td>
-                </tr>
+                  @foreach ($jadwal as $indexKey => $DataJadwal)
+                    <tr>
+                  <td>{{ $indexKey+1 }}</td>
+                  <td>
+                    @if($DataJadwal->status)
+                      Tutup
+                    @else
+                      Buka
+                    @endif
+                  </td>
+                  <td> {{$DataJadwal->created_at}}</td>
+                  </tr>
+                  @endforeach
                 </tbody>
               </table>
             </div>
