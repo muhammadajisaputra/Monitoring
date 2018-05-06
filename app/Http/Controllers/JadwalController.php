@@ -11,8 +11,14 @@ class JadwalController extends Controller
    public function index()
    {
    		 $jadwal = Jadwal::all();
-   		//$jadwal = ['test', 'test2'];
 
    		return view('tables.tables')->with('jadwal', $jadwal);
+   }
+
+   public function Update($Status)
+   {
+   	$update = new Jadwal;
+   	$update->status = $Status;
+   	$update->save();
    }
 }
