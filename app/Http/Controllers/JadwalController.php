@@ -21,4 +21,5 @@ class JadwalController extends Controller
    	$update->status = $Status;
    	$update->save();
    }
+
 }

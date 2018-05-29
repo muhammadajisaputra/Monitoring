@@ -37,9 +37,9 @@
                   <td>{{ $indexKey+1 }}</td>
                   <td>
                     @if($DataJadwal->status)
-                      LEPAS
-                    @else
                       PASANG
+                    @else
+                      LEPAS
                     @endif
                   </td>
                   <td> {{$DataJadwal->created_at}}</td>

@@ -13,5 +13,9 @@
 
 Route::get('/', 'UserController@Index');
 Route::get('/tables', 'JadwalController@index');
+Route::get('/update/{Status}', 'JadwalController@Update');
+
+Route::get('/chart', 'JadwalController@Chart');
+
 
 

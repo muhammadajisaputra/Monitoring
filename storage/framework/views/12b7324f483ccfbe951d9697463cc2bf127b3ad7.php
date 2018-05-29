@@ -35,9 +35,9 @@
                   <td><?php echo e($indexKey+1); ?></td>
                   <td>
                     <?php if($DataJadwal->status): ?>
-                      Tutup
+                      LEPAS
                     <?php else: ?>
-                      Buka
+                      PASANG
                     <?php endif; ?>
                   </td>
                   <td> <?php echo e($DataJadwal->created_at); ?></td>
